@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Card from "./components/Card";
+
+import assort from "./assets/assort.json"
+import pet from "./assets/images/Photo.png"
+
 
 function App() {
+  const [goods, setGoods] = useState(assort)
+
+  const onClickCard = (id) => {
+    setGoods(goods => goods.map(good => good.id === id ? { ...good, selected: !good.selected } : good));
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <h2 className="main-title">Ты сегодня покормил кота?</h2>
+        <div className="cards-container">
+          {goods.map(item => <Card item={item} onClickCard={onClickCard} pet={pet} />)}
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,37 @@
+[
+   {"id": 215502,
+     "title": "Нямушка",
+     "filling": "фуа-гра",
+     "description": "Утичная печень с зеленью в соусе бешамель",
+     "portions": 10,
+     "mice": 1,
+     "weight": 0.5,
+     "isHappy": false,
+     "selected": false,
+     "count": 23
+   },
+   {
+     "id": 215602,
+     "title": "Нямушка",
+     "filling": "рыбой",
+     "description": "Головы щучьи с чесноком да свежайшая сёмгушка.",
+     "portions": 40,
+     "mice": 2,
+     "weight": 2,
+     "isHappy": false,
+     "selected": false,
+     "count": 0
+   },
+   {
+     "id": 215702,
+     "title": "Нямушка",
+     "filling": "курой",
+     "description": "Тушёная курочка в сливочном соусе с чесноком",
+     "portions": 100,
+     "mice": 5,
+     "weight": 5,
+     "isHappy": true,
+     "selected": false,
+     "count": 1
+   }
+]
